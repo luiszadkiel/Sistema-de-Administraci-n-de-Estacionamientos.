@@ -1,6 +1,0 @@
-@p2_FINAAL_parqueo_HostAddress = http://localhost:5224
-
-GET {{p2_FINAAL_parqueo_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

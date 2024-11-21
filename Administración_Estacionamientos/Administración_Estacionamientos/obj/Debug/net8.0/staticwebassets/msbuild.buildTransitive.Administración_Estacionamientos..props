@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Administración_Estacionamientos..props" />
+</Project>

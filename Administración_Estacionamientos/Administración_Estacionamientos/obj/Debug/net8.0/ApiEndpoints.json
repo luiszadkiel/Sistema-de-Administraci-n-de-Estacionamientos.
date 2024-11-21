@@ -1,0 +1,33 @@
+[
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.administradoresController",
+    "Method": "GetAll",
+    "RelativePath": "api/administradores",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Administraci\u00F3n_Estacionamientos_.WeatherForecast, Administraci\u00F3n_Estacionamientos., Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

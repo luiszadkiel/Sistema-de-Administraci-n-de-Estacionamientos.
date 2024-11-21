@@ -1,0 +1,6 @@
+@Administración_Estacionamientos__HostAddress = http://localhost:5039
+
+GET {{Administración_Estacionamientos__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

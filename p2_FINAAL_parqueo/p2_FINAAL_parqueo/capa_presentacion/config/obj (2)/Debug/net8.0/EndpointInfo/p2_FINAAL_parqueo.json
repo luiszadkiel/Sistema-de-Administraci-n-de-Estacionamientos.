@@ -1,0 +1,9 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "p2_FINAAL_parqueo",
+    "version": "1.0"
+  },
+  "paths": { },
+  "components": { }
+}

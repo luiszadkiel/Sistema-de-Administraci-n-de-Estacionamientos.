@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\p2_FINAAL_parqueo.props" />
+</Project>

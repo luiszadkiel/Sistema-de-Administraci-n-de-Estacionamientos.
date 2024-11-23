@@ -1,7 +1,7 @@
 ﻿using Administración_Estacionamientos_.capa_datos.Context;
 using Microsoft.EntityFrameworkCore;
 using Administración_Estacionamientos.capa_negocio.interfaz;
-using System.Collections.Generic;
+using Administración_Estacionamientos_.capa_negocio;
 
 namespace Administración_Estacionamientos_.capa_negocio.Services
 {
@@ -15,6 +15,8 @@ namespace Administración_Estacionamientos_.capa_negocio.Services
             this.contexto = contexto;
             dbSet = contexto.Set<T>();
         }
+
+     
         public void Delete(int id)
         {
             var entidad = GetById(id);
@@ -37,6 +39,7 @@ namespace Administración_Estacionamientos_.capa_negocio.Services
             dbSet.Add(entidad);
             contexto.SaveChanges();
         }
+
 
         public void Update(T entidad)
         {

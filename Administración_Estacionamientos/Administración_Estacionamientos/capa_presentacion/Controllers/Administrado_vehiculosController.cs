@@ -7,11 +7,11 @@ namespace Administración_Estacionamientos_.capa_presentacion.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AdministradoresController : ControllerBase
+    public class Administrado_vehiculosController : Controller
     {
-        private readonly IRepository<administradores> service;
+        private readonly IRepository<vehiculosPermmitidos> service;
 
-        public AdministradoresController(IRepository<administradores> service)
+        public Administrado_vehiculosController(IRepository<vehiculosPermmitidos> service)
         {
             this.service = service;
         }
@@ -24,13 +24,13 @@ namespace Administración_Estacionamientos_.capa_presentacion.Controllers
         }
 
         [HttpPost]
-        public IActionResult Crear([FromBody] administradores modelo)
+        public IActionResult Crear([FromBody] vehiculosPermmitidos modelo)
         {
             if (modelo == null)
                 return BadRequest("El modelo no puede ser nulo.");
 
             service.Set(modelo);
-            return CreatedAtAction(nameof(Buscar), new { id = modelo.AdministradorID }, modelo);
+            return CreatedAtAction(nameof(Buscar), new { id = modelo.vehiculos_permmitidosID }, modelo);
         }
 
 
@@ -44,7 +44,7 @@ namespace Administración_Estacionamientos_.capa_presentacion.Controllers
             return Ok(result);
         }
 
-       [HttpDelete("{id}")]
+        [HttpDelete("{id}")]
         public IActionResult Borrar(int id)
         {
             var entity = service.GetById(id);
@@ -56,10 +56,10 @@ namespace Administración_Estacionamientos_.capa_presentacion.Controllers
         }
 
         [HttpPut]
-        public void  Actualizar([FromBody] administradores modelo)
+        public void Actualizar([FromBody] vehiculosPermmitidos modelo)
         {
-            service.Update(modelo);      
-        
+            service.Update(modelo);
+
         }
     }
 }

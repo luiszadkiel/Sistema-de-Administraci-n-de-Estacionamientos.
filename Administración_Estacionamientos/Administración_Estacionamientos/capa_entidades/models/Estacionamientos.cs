@@ -8,9 +8,9 @@ namespace Administración_Estacionamientos_.capa_entidades.models
     {
         [Key]
         public int EstacionamientoID { get; set; }
-        public int NumeroEstacionamiento { get; set; }
-        public int CapacidadEspacios { get; set; }
-        public int EspaciosDisponibles { get; set; }
+        public int Numero_Estacionamiento { get; set; }
+        public int Capacidad_Espacios { get; set; }
+        public int Espacios_Disponibles { get; set; }
 
     }
 }

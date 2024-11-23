@@ -9,7 +9,8 @@ namespace Administración_Estacionamientos_.capa_entidades.models
         [Key]
         public int TarifaID { get; set; }
         public int TipoVehiculoID { get; set; } // FK 
-        public decimal TarifaPorHora { get; set; }
+        
+        public decimal Tarifa_Por_Hora { get; set; }
 
        
     }

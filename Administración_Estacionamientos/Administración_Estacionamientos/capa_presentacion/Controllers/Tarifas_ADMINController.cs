@@ -1,17 +1,16 @@
 ﻿using Administración_Estacionamientos.capa_negocio.interfaz;
 using Administración_Estacionamientos_.capa_entidades.models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Administración_Estacionamientos_.capa_presentacion.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AdministradoresController : ControllerBase
+    public class Tarifas_ADMINController : Controller
     {
-        private readonly IRepository<administradores> service;
+        private readonly IRepository<Tarifa> service;
 
-        public AdministradoresController(IRepository<administradores> service)
+        public Tarifas_ADMINController(IRepository<Tarifa> service)
         {
             this.service = service;
         }
@@ -24,13 +23,13 @@ namespace Administración_Estacionamientos_.capa_presentacion.Controllers
         }
 
         [HttpPost]
-        public IActionResult Crear([FromBody] administradores modelo)
+        public IActionResult Crear([FromBody] Tarifa modelo)
         {
             if (modelo == null)
                 return BadRequest("El modelo no puede ser nulo.");
 
             service.Set(modelo);
-            return CreatedAtAction(nameof(Buscar), new { id = modelo.AdministradorID }, modelo);
+            return CreatedAtAction(nameof(Buscar), new { id = modelo.TarifaID }, modelo);
         }
 
 
@@ -44,7 +43,7 @@ namespace Administración_Estacionamientos_.capa_presentacion.Controllers
             return Ok(result);
         }
 
-       [HttpDelete("{id}")]
+        [HttpDelete("{id}")]
         public IActionResult Borrar(int id)
         {
             var entity = service.GetById(id);
@@ -56,10 +55,10 @@ namespace Administración_Estacionamientos_.capa_presentacion.Controllers
         }
 
         [HttpPut]
-        public void  Actualizar([FromBody] administradores modelo)
+        public void Actualizar([FromBody] Tarifa modelo)
         {
-            service.Update(modelo);      
-        
+            service.Update(modelo);
+
         }
     }
 }

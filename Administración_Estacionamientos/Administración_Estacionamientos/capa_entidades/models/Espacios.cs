@@ -8,10 +8,10 @@ namespace Administración_Estacionamientos_.capa_entidades.models
     {
         [Key]
         public int EspacioID { get; set; }
-        public int NumeroEspacio { get; set; }
+        public int Numero_Espacio { get; set; }
         public string Estado { get; set; } // "Disponible" o "Ocupado"
-        public TimeSpan? TiempoOcupado { get; set; }
-        public string TipoEspacio { get; set; } //"Por tipo de carro
+        public TimeSpan? Tiempo_Ocupado { get; set; }
+        public string Tipo_Espacio { get; set; } //"Por tipo de carro
         public int EstacionamientoID { get; set; } // FK 
       
 

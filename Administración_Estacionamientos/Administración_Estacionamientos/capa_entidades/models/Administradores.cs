@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Administración_Estacionamientos_.capa_negocio;
+using System;
 using System.ComponentModel.DataAnnotations;
 
 namespace Administración_Estacionamientos_.capa_entidades.models

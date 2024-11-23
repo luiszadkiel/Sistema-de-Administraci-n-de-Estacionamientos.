@@ -1,8 +1,8 @@
 [
   {
-    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.administradoresController",
-    "Method": "GetAll",
-    "RelativePath": "api/administradores",
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Administrado_vehiculosController",
+    "Method": "VerTodos",
+    "RelativePath": "api/Administrado_vehiculos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -10,24 +10,521 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Administrado_vehiculosController",
+    "Method": "Crear",
+    "RelativePath": "api/Administrado_vehiculos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.vehiculosPermmitidos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Administrado_vehiculosController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Administrado_vehiculos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.vehiculosPermmitidos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Administrado_vehiculosController",
+    "Method": "Buscar",
+    "RelativePath": "api/Administrado_vehiculos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Administrado_vehiculosController",
+    "Method": "Borrar",
+    "RelativePath": "api/Administrado_vehiculos/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.AdministradoresController",
+    "Method": "VerTodos",
+    "RelativePath": "api/Administradores",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.AdministradoresController",
+    "Method": "Crear",
+    "RelativePath": "api/Administradores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[Administraci\u00F3n_Estacionamientos_.WeatherForecast, Administraci\u00F3n_Estacionamientos., Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.administradores",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.AdministradoresController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Administradores",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.administradores",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.AdministradoresController",
+    "Method": "Buscar",
+    "RelativePath": "api/Administradores/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.AdministradoresController",
+    "Method": "Borrar",
+    "RelativePath": "api/Administradores/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Espacios_ADMINController",
+    "Method": "VerTodos",
+    "RelativePath": "api/Espacios_ADMIN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Espacios_ADMINController",
+    "Method": "Crear",
+    "RelativePath": "api/Espacios_ADMIN",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Espacios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Espacios_ADMINController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Espacios_ADMIN",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Espacios",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Espacios_ADMINController",
+    "Method": "Buscar",
+    "RelativePath": "api/Espacios_ADMIN/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Espacios_ADMINController",
+    "Method": "Borrar",
+    "RelativePath": "api/Espacios_ADMIN/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Estacionamiento_ADMINController",
+    "Method": "VerTodos",
+    "RelativePath": "api/Estacionamiento_ADMIN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Estacionamiento_ADMINController",
+    "Method": "Crear",
+    "RelativePath": "api/Estacionamiento_ADMIN",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Estacionamientos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Estacionamiento_ADMINController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Estacionamiento_ADMIN",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Estacionamientos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Estacionamiento_ADMINController",
+    "Method": "Buscar",
+    "RelativePath": "api/Estacionamiento_ADMIN/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Estacionamiento_ADMINController",
+    "Method": "Borrar",
+    "RelativePath": "api/Estacionamiento_ADMIN/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tarifas_ADMINController",
+    "Method": "VerTodos",
+    "RelativePath": "api/Tarifas_ADMIN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tarifas_ADMINController",
+    "Method": "Crear",
+    "RelativePath": "api/Tarifas_ADMIN",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Tarifa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tarifas_ADMINController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Tarifas_ADMIN",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Tarifa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tarifas_ADMINController",
+    "Method": "Buscar",
+    "RelativePath": "api/Tarifas_ADMIN/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tarifas_ADMINController",
+    "Method": "Borrar",
+    "RelativePath": "api/Tarifas_ADMIN/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.TiketController",
+    "Method": "VerTodos",
+    "RelativePath": "api/Tiket",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.TiketController",
+    "Method": "Crear",
+    "RelativePath": "api/Tiket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Tiket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.TiketController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Tiket",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.Tiket",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.TiketController",
+    "Method": "Buscar",
+    "RelativePath": "api/Tiket/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tipos_vehiculosController",
+    "Method": "VerTodos",
+    "RelativePath": "api/Tipos_vehiculos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tipos_vehiculosController",
+    "Method": "Crear",
+    "RelativePath": "api/Tipos_vehiculos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.administar_vehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tipos_vehiculosController",
+    "Method": "Actualizar",
+    "RelativePath": "api/Tipos_vehiculos",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "modelo",
+        "Type": "Administraci\u00F3n_Estacionamientos_.capa_entidades.models.administar_vehiculos",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Administraci\u00F3n_Estacionamientos_.capa_presentacion.Controllers.Tipos_vehiculosController",
+    "Method": "Buscar",
+    "RelativePath": "api/Tipos_vehiculos/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

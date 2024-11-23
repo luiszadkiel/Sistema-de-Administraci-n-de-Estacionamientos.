@@ -2,13 +2,13 @@
 using System.ComponentModel.DataAnnotations;
 
 namespace Administración_Estacionamientos_.capa_entidades.models
-
 {
-    public class administar_vehiculos
+    public class vehiculosPermmitidos
     {
         [Key]
-        public int TipoVehiculoID { get; set; }
-        public string Nombre_Tipo { get; set; }
+        public int vehiculos_permmitidosID { get; set; }
+        public string? NOMBRE_vehiculos_permmitidos { get; set; }
+
+        
     }
- 
 }
